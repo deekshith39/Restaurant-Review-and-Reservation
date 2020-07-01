@@ -1,0 +1,55 @@
+ <head>
+        <title>Sign Up Form</title>
+        <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="signup.css">
+        <script type="text/javascript">
+          function validation()
+{
+var a = document.form.phone.value;
+if(a=="")
+{
+alert("Please Enter Your Mobile Number");
+document.form.phone.focus();
+return false;
+}
+}
+        </script>
+    </head>
+    <body> 
+
+      <form action="loginpage.html" method="post">
+      
+        <h1>Sign Up</h1>
+        
+        <fieldset>
+          <legend>Enter your details here</legend>
+          <br>
+          
+          <label for="cust_id">User id</label>
+          
+          <input type="text" name="cust_id" required>
+        
+          
+          <label for="name">Name:</label>
+          <input type="text" id="name" 
+          name="user_name" required>
+          
+          <label for="mail">Email:</label>
+          <input type="email" id="mail" 
+          name="user_email" required>
+          
+          <label for="password">Password:</label>
+          <input type="password" id="password" 
+          name="user_password" required>
+          
+         <label for ="contact_no">Contact Number
+         </label>
+         <input type="tel" name="contact_no" required>
+        </fieldset>
+        
+        
+        <button type="submit">Sign Up</button>
+      </form>
+      
+    </body>
+</html>
